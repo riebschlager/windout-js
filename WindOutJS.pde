@@ -133,7 +133,7 @@ class Particle {
     noiseVec = new PVector();
     initialRotation = random(-HALF_PI, HALF_PI);
     finalRotation = random(-HALF_PI, HALF_PI);
-    maxScale = random(0.25);
+    maxScale = random(0.5);
   }
 
   void update() {
