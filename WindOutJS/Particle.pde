@@ -26,7 +26,7 @@ class Particle {
     noiseVec.x = cos(noiseFloat);
     noiseVec.y = sin(noiseFloat);
     vel.add(noiseVec);
-    vel.div(100);
+    vel.div(300);
     pos.add(vel);
     age++;
     if (percent == 1f) {
