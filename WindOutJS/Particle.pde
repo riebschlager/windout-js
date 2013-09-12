@@ -17,7 +17,7 @@ class Particle {
     noiseVec = new PVector();
     initialRotation = random(-HALF_PI, HALF_PI);
     finalRotation = random(-HALF_PI, HALF_PI);
-    maxScale = random(1);
+    maxScale = random(0.5);
   }
 
   void update() {
@@ -26,7 +26,7 @@ class Particle {
     noiseVec.x = cos(noiseFloat);
     noiseVec.y = sin(noiseFloat);
     vel.add(noiseVec);
-    vel.div(300);
+    vel.div(100);
     pos.add(vel);
     age++;
     if (percent == 1f) {
