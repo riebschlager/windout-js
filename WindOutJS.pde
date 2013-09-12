@@ -38,7 +38,7 @@ void startOver() {
 
 void draw() {
   background(255);
-  if (drawing == true && particles.size() < 20) {
+  if (drawing == true && particles.size() < 100) {
     Particle p = new Particle(new PVector(mouseX, mouseY), (int) random(80, 100));
     p.shape = myShape;
     p.shape.disableStyle();
